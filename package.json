@@ -4,9 +4,11 @@
   "description": "my first socket.io app",
   "dependencies": {
     "express": "^4.15.2",
+    "nodemon": "^1.18.10",
     "socket.io": "^1.7.3"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon src/index.js | bunyan -o short"
   }
 }
