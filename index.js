@@ -11,7 +11,7 @@ var messages = []
 
 io.on('connection', function (socket) {
   console.log('a user connected')
-  console.log('socket', socket)
+  //console.log('socket', socket)
   io.emit('this', { will: 'be received by everyone' })
 
   messages.forEach((item) => {
